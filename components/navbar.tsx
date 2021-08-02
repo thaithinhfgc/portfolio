@@ -8,7 +8,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
     const [click, setClick] = React.useState(false);
 
     return (
-        <div className="p-4">
+        <div className="fixed z-50 w-full p-4 bg-white shadow-lg">
             <div className="flex items-center justify-between mb-2 lg:px-8 lg:items-end">
                 <div className="items-end space-x-4 lg:flex space">
                     <div className="flex space-x-2">

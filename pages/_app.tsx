@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import '../styles/tailwind.css';
 import { store } from '../store';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 export interface AppProps {
     Component: React.FunctionComponent;
@@ -17,6 +18,7 @@ const App: React.FunctionComponent<AppProps> = ({ Component, pageProps }) => {
             <div className="flex flex-col min-h-screen">
                 <Navbar />
                 <Component {...pageProps} />
+                <Footer />
             </div>
         </Provider>
     );
