@@ -1,0 +1,133 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus {
+    outline: 0 !important;
+}
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes renderWave {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(110%);
+    }
+}
+@keyframes loaderWave {
+    0% {
+        transform: translateX(-50%) scaleX(0.2);
+    }
+
+    100% {
+        transform: translateX(110%) scaleX(0.8);
+    }
+}
+@keyframes cardWave {
+    0% {
+        transform: translate(10%, 10%) scale(0.8);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+.fade-in {
+    animation: 1s forwards FadeIn;
+}
+
+.render-wave {
+    transform-origin: left;
+    animation: 1.2s forwards renderWave;
+}
+
+.fade-left {
+    animation: 1.2s forwards fadeLeft;
+}
+.card-wave {
+    animation: 1.2s forwards cardWave;
+}
+
+.loader-wave {
+    transform-origin: left;
+    animation: 1.2s forwards loaderWave;
+}
+
+.banner-fade-in {
+    opacity: 0;
+    animation: FadeIn 2s 1s forwards;
+}
+
+.bg-moon {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    background-image: url('/asset/icons/moonlight.svg'), url('/asset/icons/star.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-scroll {
+    position: absolute;
+    bottom: 100px;
+    color: #fefefe;
+    left: 3rem;
+    writing-mode: vertical-rl;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.btn-scroll-2 {
+    position: absolute;
+    bottom: 100px;
+    color: #fefefe;
+    right: 3rem;
+    writing-mode: vertical-rl;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.btn-scroll::after,
+.btn-scroll-2::after {
+    content: '';
+    top: 110%;
+    left: 40%;
+    position: absolute;
+    display: block;
+    height: 85px;
+    width: 2px;
+    background-color: #fefefe;
+}
+.tooltip:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.flex-0 {
+    flex: 0;
+}
