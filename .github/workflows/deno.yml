@@ -1,0 +1,26 @@
+name: Auto Deploy
+on:
+    push:
+        branches: [master]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [14.x]
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - run: touch out/.nojekyll
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@3.5.9
+              env:
+                  ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+              with:
+                  GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+                  BRANCH: gh-pages
+                  FOLDER: out
