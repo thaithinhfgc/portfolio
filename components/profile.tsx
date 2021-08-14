@@ -9,7 +9,7 @@ const Profile: React.FunctionComponent<ProfileProps> = () => {
     return (
         <div className="relative flex flex-col flex-1 h-full pt-36 md:pt-16 lg:flex-row">
             <div className="lg:w-2/6 lg:relative">
-                <div className="absolute z-20 w-full lg:-right-40 lg:top-40 lg:w-96">
+                <div className="absolute z-20 w-full lg:-right-40 lg:top-16 lg:w-96">
                     <div className="flex flex-col items-center pt-8 pb-2 mx-2 space-y-4 shadow-xl lg:pt-16 lg:pb-0 bg-dawn-pink-500">
                         <div className="w-40 overflow-hidden rounded-full ">
                             <img src="/asset/images/avatar.png" className="object-cover w-full h-full" alt="Nguyen Thai Thinh" />
