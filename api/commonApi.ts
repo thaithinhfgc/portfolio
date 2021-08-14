@@ -8,7 +8,7 @@ export class CommonAPI {
     constructor(private readonly apiCall: AxiosInstance, private readonly prefix: string) {}
 
     async sendFeedBack(input: SupportDto) {
-        const url = `${this.prefix + '/support'}`;
+        const url = `${this.prefix + '/bot/send'}`;
         const res = await this.apiCall.post<ServerResponse<void>>(url, input);
         return res;
     }

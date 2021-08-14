@@ -24,10 +24,20 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
                     </p>
                 </div>
                 <ul className="hidden space-x-4 lg:flex">
-                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">ABOUT ME</li>
-                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">RESUME</li>
-                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">PROJECTS</li>
-                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">CONTACT</li>
+                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">
+                        <Link href="/">ABOUT ME</Link>
+                    </li>
+                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">
+                        <Link href="/resume">RESUME</Link>
+                    </li>
+                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">
+                        <a href="https://github.com/thaithinhfgc" target="__blank">
+                            PROJECTS
+                        </a>
+                    </li>
+                    <li className="font-bold duration-300 lg:font-semibold hover:text-blue-600">
+                        <Link href="/contact">CONTACT</Link>
+                    </li>
                 </ul>
                 <div className="flex flex-col space-y-2 lg:hidden" onClick={() => setClick(!click)}>
                     <div className={`w-4 h-1 bg-blue-600 rounded-lg transform duration-300 ${click && 'translate-x-4'}`}></div>
@@ -42,10 +52,20 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
                 }`}
             >
                 <ul className="space-y-8 text-center transform -translate-y-16 ">
-                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">ABOUT ME</li>
-                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">RESUME</li>
-                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">PROJECTS</li>
-                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">CONTACT</li>
+                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">
+                        <Link href="/">ABOUT ME</Link>
+                    </li>
+                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">
+                        <Link href="/resume">RESUME</Link>
+                    </li>
+                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">
+                        <a href="https://github.com/thaithinhfgc" target="__blank">
+                            PROJECTS
+                        </a>
+                    </li>
+                    <li className="text-4xl font-bold duration-300 hover:text-blue-600">
+                        <Link href="/contact">CONTACT</Link>
+                    </li>
                 </ul>
             </button>
         </div>

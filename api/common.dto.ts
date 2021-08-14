@@ -1,5 +1,6 @@
 export interface SupportDto {
+    fullName: string;
     email: string;
-    name: string;
+    phone: string;
     message: string;
 }
