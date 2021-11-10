@@ -13,19 +13,27 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
             <div className="flex flex-wrap space-y-2 md:flex-nowrap md:space-x-8 md:space-y-0 ">
                 <div className="w-1/2 text-left md:text-center ">
                     <p className="font-semibold">Call</p>
-                    <a href="#">123-456-789</a>
+                    <a href="#">08 5352 8202</a>
                 </div>
                 <div className="w-1/2 text-left md:text-center">
                     <p className="font-semibold">Write</p>
-                    <a href="#">info@mysite.com</a>
+                    <a href="#">thaithinhfgc.site</a>
                 </div>
                 <div className="text-left md:text-center">
                     <p className="font-semibold">Follow</p>
                     <div className="flex space-x-2">
-                        <GithubIcon />
-                        <InIcon />
-                        <FacebookIcon />
-                        <GmailIcon />
+                        <a href="https://github.com/thaithinhfgc" target="_blank">
+                            <GithubIcon />
+                        </a>
+                        <a href="https://www.linkedin.com/in/thaithinhfgc/" target="_blank">
+                            <InIcon />
+                        </a>
+                        <a href="https://www.facebook.com/thaithinhfgc/" target="_blank">
+                            <FacebookIcon />
+                        </a>
+                        <a href="mailto:thaithinhbanzai79@gmail.com" target="_blank">
+                            <GmailIcon />
+                        </a>
                     </div>
                 </div>
             </div>
