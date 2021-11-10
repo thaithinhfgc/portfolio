@@ -62,7 +62,7 @@ const Profile: React.FunctionComponent<ProfileProps> = () => {
                             <a href="https://www.facebook.com/thaithinhfgc/" target="_blank">
                                 <FacebookIcon />
                             </a>
-                            <a href="mailto:thaithinhbanzai79@gmail.com">
+                            <a href="mailto:thaithinhbanzai79@gmail.com" target="_blank">
                                 <GmailIcon />
                             </a>
                         </div>
