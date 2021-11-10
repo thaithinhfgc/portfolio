@@ -10,7 +10,7 @@ const Resume: React.FunctionComponent<ResumeProps> = () => {
                     <div className="w-4 h-4 bg-blue-600"></div>
                     <h1>Resume</h1>
                 </div>
-                <div className="flex items-center justify-between w-full">
+                {/* <div className="flex items-center justify-between w-full">
                     <p className="text-2xl font-bold">Experience</p>
                     <a href="#" className="block px-4 py-2 font-semibold text-white bg-blue-600 rounded-3xl">
                         DOWNLOAD CV
@@ -36,7 +36,7 @@ const Resume: React.FunctionComponent<ResumeProps> = () => {
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="flex items-center justify-between w-full md:pt-10">
                     <p className="text-2xl font-bold">Education</p>
                 </div>
@@ -45,17 +45,14 @@ const Resume: React.FunctionComponent<ResumeProps> = () => {
                         <li>
                             <div className="px-2 py-8 bg-white shadow-md md:flex md:justify-between md:px-16 md:py-16">
                                 <div className="flex-1 space-y-2 text-lg">
-                                    <p className="font-bold text-blue-600 md:text-2xl ">2022 - Present</p>
-                                    <p>JOB POSITION </p>
-                                    <p>Company Name</p>
-                                    <p>Company Location</p>
+                                    <p className="font-bold text-blue-600 md:text-2xl ">1019 - Present</p>
+                                    <p>Student</p>
+                                    <p>FPT University</p>
+                                    <p>Ho Chi Minh City</p>
                                 </div>
                                 <div className="flex-1 opacity-70 md:opacity-80 md:pt-16">
-                                    <p>
-                                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
-                                        click me to add your own content and make changes to the font.
-                                    </p>
-                                    <p>I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                    <p>I'm a third year student at FPT University</p>
+                                    <p>Graduating next year as expected</p>
                                 </div>
                             </div>
                         </li>

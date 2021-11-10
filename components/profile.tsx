@@ -27,13 +27,15 @@ const Profile: React.FunctionComponent<ProfileProps> = () => {
                             </div>
                             <div className="space-x-4 font-semibold ">
                                 <a
-                                    href="#"
+                                    href="https://thaithinhfgc.github.io/MyCV/NguyenThaiThinh_CV.pdf"
+                                    target="_blank"
                                     className="inline-block px-4 py-1 text-white duration-300 bg-blue-600 border-2 border-blue-600 hover:border-black hover:text-black rounded-3xl hover:bg-dawn-pink-500"
                                 >
                                     RESUME
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://github.com/thaithinhfgc"
+                                    target="_blank"
                                     className="inline-block px-4 py-1 duration-300 border-2 border-black rounded-3xl hover:bg-blue-600 hover:text-white hover:border-blue-600"
                                 >
                                     PROJECTS
@@ -42,18 +44,27 @@ const Profile: React.FunctionComponent<ProfileProps> = () => {
                             <div className="hidden opacity-70 lg:block ">
                                 <p>About Me:</p>
                                 <p className="w-72">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-                                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    I am an energetic and passionate Software Engineering student. I've built projects on small teams. I'm looking for
+                                    an intership position where I can learn from other experienced team members and continue to develop my skill set
+                                    on backend at a mission driven company.
                                 </p>
                             </div>
                         </div>
 
                         <p className="inline-block py-4 text-xl font-thin tracking-widest">BACKEND DEVELOPER</p>
                         <div className="flex items-center justify-center w-full p-2 space-x-4 bg-white ">
-                            <GithubIcon />
-                            <InIcon />
-                            <FacebookIcon />
-                            <GmailIcon />
+                            <a href="https://github.com/thaithinhfgc" target="_blank">
+                                <GithubIcon />
+                            </a>
+                            <a href="https://www.linkedin.com/in/thaithinhfgc/" target="_blank">
+                                <InIcon />
+                            </a>
+                            <a href="https://www.facebook.com/thaithinhfgc/" target="_blank">
+                                <FacebookIcon />
+                            </a>
+                            <a href="mailto:thaithinhbanzai79@gmail.com">
+                                <GmailIcon />
+                            </a>
                         </div>
                     </div>
                 </div>
